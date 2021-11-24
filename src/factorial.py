@@ -1,15 +1,3 @@
-"""
- - dynamic typing
- - type hints
- - python 3.5
- - static type checker (check code) - try to check violation on type hints or not
- - error better than when we use debugger - see list example
- - a way to document our code
- - ignored by interpreter
- - debug process
-"""
-
-
 def factorial(i):
     """
     3! == 3 x 2 x 1 = 6
