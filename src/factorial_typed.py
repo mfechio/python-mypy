@@ -16,4 +16,4 @@ def factorial(i: int) -> int:
 # print(factorial('3'))
 
 # Argument 1 to "factorial" has incompatible type "float"; expected "int"
-print(factorial(3.01))
+# print(factorial(3.01))
