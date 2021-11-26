@@ -11,5 +11,5 @@ def map_int_list(fnc: Callable, list_received: List[int]) -> List[int]:
 #    return {key: fnc(value) for key, value in dict_received.items()}
 
 
-print(map_int_list(factorial, [0, 1, 2, 3, 40.1]))
+print(map_int_list(factorial, [0, 1, 2, 3, 40]))
 # print(map_int_dict(factorial, {'zero': 1, 'one': 1, 'three': 3}))
