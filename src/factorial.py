@@ -17,7 +17,7 @@ def factorial(i):
 
 
 # Success
-print(factorial(3))
+# print(factorial(3))
 
 # TypeError: '<' not supported between instances of 'str' and 'int'
 # print(factorial('3'))
