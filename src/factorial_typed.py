@@ -10,7 +10,7 @@ def factorial(i: int) -> int:
 
 
 # Success: no issues found in 1 source file
-print(factorial(3))
+print(factorial(3.01))
 
 # factorial_typed.py:4: error: Incompatible return value type (got "None", expected "int")
 # factorial_typed.py:17: error:
