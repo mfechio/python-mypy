@@ -22,5 +22,5 @@ print(factorial(3))
 # TypeError: '<' not supported between instances of 'str' and 'int'
 # print(factorial('3'))
 
-# TypeError: unsupported operand type(s) for *: 'float' and 'NoneType'
+# ValueError: Factorial not defined for negative values
 # print(factorial(3.01))
