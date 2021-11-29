@@ -1,6 +1,6 @@
 from typing import Optional, Union, Union, Generic, TypeVar
 
-T = TypeVar('T', int, float)
+T = TypeVar('T', float, int)
 
 
 class BinaryTree (Generic[T]):
@@ -63,7 +63,7 @@ print(tree.find(4))
 
 tree.add(7)
 tree.add(3)
-tree.add(0.5)
+tree.add(1)
 
 print("\nPrint Tree:")
 tree.traverse(printer)
