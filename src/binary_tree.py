@@ -1,13 +1,18 @@
-class BinaryTree:
-    # value
+from typing import Optional, Union, Union, Generic, TypeVar
 
-    left = None
-    right = None
+T = TypeVar('T', int, float)
 
-    def __init__(self, value):
+
+class BinaryTree (Generic[T]):
+    value: T
+
+    left: 'Optional[BinaryTree]' = None
+    right: Optional['BinaryTree'] = None
+
+    def __init__(self, value: T):
         self.value = value
 
-    def add(self, value):
+    def add(self, value: T) -> None:
         if value < self.value:
             if self.left is None:
                 self.left = BinaryTree(value)
@@ -19,7 +24,7 @@ class BinaryTree:
             else:
                 self.right.add(value)
 
-    def find(self, value):
+    def find(self, value: T) -> Optional[T]:
         if self.value == value:
             return self.value
         elif value < self.value and self.left is not None:
